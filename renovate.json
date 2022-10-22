@@ -4,7 +4,7 @@
   "dependencyDashboard": true,
   "packageRules": [
     {
-      "matchDatasources": ["docker"],
+      "matchDatasources": ["docker", "github-releases"],
       "matchUpdateTypes": ["minor", "patch"],
       "automergeType": "branch",
       "automerge": true,
