@@ -13,7 +13,7 @@
   ],
   "regexManagers": [
     {
-      "fileMatch": [".+\\.yaml$"],
+      "fileMatch": ["Dockerfile"],
       "matchStrings": [
         "github.com\\/(?<depName>.*?)\\/releases\\/download\\/(?<currentValue>.*)\\/librespot-api-.*\\.jar",
         "github.com\\/(?<depName>.*?)\\/releases\\/download\\/.*\\/librespot-api-(?<currentValue>.*)\\.jar"
