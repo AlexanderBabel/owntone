@@ -1,0 +1,9 @@
+#!/usr/bin/with-contenv bash
+
+if [ ! -p "/music/librespot-java" ]; then
+  mkfifo /music/librespot-java
+fi
+
+if [ ! -p "/music/librespot-java.metadata" ]; then
+  mkfifo /music/librespot-java.metadata
+fi

@@ -1,0 +1,24 @@
+{
+  "extends": ["config:base", ":disableRateLimiting"],
+  "prHourlyLimit": 0,
+  "dependencyDashboard": true,
+  "packageRules": [
+    {
+      "matchDatasources": ["docker"],
+      "matchUpdateTypes": ["minor", "patch"],
+      "automergeType": "branch",
+      "automerge": true,
+      "ignoreTests": true
+    }
+  ],
+  "regexManagers": [
+    {
+      "fileMatch": [".+\\.yaml$"],
+      "matchStrings": [
+        "github.com\\/(?<depName>.*?)\\/releases\\/download\\/(?<currentValue>.*)\\/librespot-api-.*\\.jar",
+        "github.com\\/(?<depName>.*?)\\/releases\\/download\\/.*\\/librespot-api-(?<currentValue>.*)\\.jar"
+      ],
+      "datasourceTemplate": "github-releases"
+    }
+  ]
+}
