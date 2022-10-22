@@ -13,12 +13,11 @@
   ],
   "regexManagers": [
     {
-      "fileMatch": ["Dockerfile"],
+      "fileMatch": ["^Dockerfile$"],
       "matchStrings": [
-        "github.com\\/(?<depName>.*?)\\/releases\\/download\\/v(?<currentValue>.*)\\/librespot-api-.*\\.jar",
-        "github.com\\/(?<depName>.*?)\\/releases\\/download\\/.*\\/librespot-api-(?<currentValue>.*)\\.jar"
+        "datasource=(?<datasource>.*?) depName=(?<depName>.*?)( versioning=(?<versioning>.*?))?\\sENV .*?_VERSION=(?<currentValue>.*)\\s"
       ],
-      "datasourceTemplate": "github-releases"
+      "versioningTemplate": "{{#if versioning}}{{{versioning}}}{{else}}semver{{/if}}"
     }
   ]
 }
