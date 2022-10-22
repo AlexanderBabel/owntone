@@ -1,2 +1,2 @@
 #!/usr/bin/execlineb -P
-java -jar /opt/librespot-java.jar --conf-file=/config/config.toml
+java -jar /opt/librespot-java.jar --conf-file=/config/owntone/librespot-java.toml
