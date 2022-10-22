@@ -7,5 +7,5 @@ RUN echo "**** install java and remove librespot ****" && \
       librespot && \
     rm -r /etc/services.d/librespot
 
-ADD https://github.com/librespot-org/librespot-java/releases/download/v1.6.1/librespot-api-1.6.1.jar /opt/librespot-java.jar
+ADD https://github.com/librespot-org/librespot-java/releases/download/v1.6.2/librespot-api-1.6.1.jar /opt/librespot-java.jar
 COPY root/ /
