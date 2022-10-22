@@ -11,7 +11,7 @@
       "ignoreTests": true
     },
     {
-      "matchPackageNames": ["ibrespot-org/librespot-java"],
+      "matchPackageNames": ["librespot-org/librespot-java"],
       "extractVersion": "^v(?<version>.*)$"
     }
   ],
