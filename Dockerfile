@@ -1,7 +1,7 @@
 FROM ghcr.io/linuxserver/daapd:28.5-ls94
 
 # renovate: datasource=github-releases depName=librespot-org/librespot-java
-ENV LIBRESPOT_VERSION=v1.6.2
+ENV LIBRESPOT_VERSION=1.6.1
 
 RUN echo "**** install java and remove librespot ****" && \
     apk add -U --update --no-cache \
@@ -10,5 +10,5 @@ RUN echo "**** install java and remove librespot ****" && \
       librespot && \
     rm -r /etc/services.d/librespot
 
-ADD https://github.com/librespot-org/librespot-java/releases/download/${LIBRESPOT_VERSION}/librespot-api-${LIBRESPOT_VERSION:1}.jar /opt/librespot-java.jar
+ADD https://github.com/librespot-org/librespot-java/releases/download/v${LIBRESPOT_VERSION}/librespot-api-${LIBRESPOT_VERSION}.jar /opt/librespot-java.jar
 COPY root/ /

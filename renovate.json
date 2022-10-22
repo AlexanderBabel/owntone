@@ -9,6 +9,10 @@
       "automergeType": "branch",
       "automerge": true,
       "ignoreTests": true
+    },
+    {
+      "matchPackageNames": ["ibrespot-org/librespot-java"],
+      "extractVersion": "^v(?<version>.*)$"
     }
   ],
   "regexManagers": [
