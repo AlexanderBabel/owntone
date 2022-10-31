@@ -13,9 +13,9 @@ storeCredentials = true # Whether to store reusable credentials on disk (not a p
 credentialsFile = "/config/credentials.json" # Credentials file (JSON)
 
 [zeroconf] ### Zeroconf ###
-listenPort = 9993 # Listen on this TCP port (`-1` for random)
-listenAll = true # Listen on all interfaces (overrides `zeroconf.interfaces`)
-interfaces = "" # Listen on these interfaces (comma separated list of names)
+listenPort = -1 # Listen on this TCP port (`-1` for random)
+listenAll = false # Listen on all interfaces (overrides `zeroconf.interfaces`)
+interfaces = "eth0" # Listen on these interfaces (comma separated list of names)
 
 [cache] ### Cache ###
 enabled = true # Cache enabled
