@@ -23,7 +23,7 @@ docker pull ghcr.io/alexanderbabel/owntone:VERSION
 
 Run the image:
 ```bash
-docker run --network=host -v ./config:/config/owntone alexbabel/owntone:VERSION
+docker run --network=host -v $(pwd)/config:/config/owntone alexbabel/owntone:VERSION
 ```
 
 ## Access
