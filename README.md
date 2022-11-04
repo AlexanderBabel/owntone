@@ -33,6 +33,6 @@ You can access the OwnTone instance on the default port (3689).
 All configuration files are stored inside the docker image in `/config/owntone`. There, you can find multple files:
 
 - [`librespot-java.toml`](https://github.com/AlexanderBabel/owntone/blob/main/root/defaults/librespot-java.toml) - Configuration for [librespot-java](https://github.com/librespot-org/librespot-java)
-- [`owntone.conf`](https://github.com/AlexanderBabel/owntone/blob/main/root/defaults/librespot-java.toml) - Configuration for [OwnTone](https://github.com/owntone/owntone-server)
+- [`owntone.conf`](https://github.com/AlexanderBabel/owntone/blob/main/root/defaults/owntone.conf) - Configuration for [OwnTone](https://github.com/owntone/owntone-server)
 
 Both files are adjusted to work out of the box as a Spotify Connect speaker. The content of these files can be found in this repository.
