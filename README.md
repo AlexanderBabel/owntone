@@ -1,3 +1,7 @@
+# IMPORTANT
+
+This project has been moved! It is now available here: [AlexanderBabel/custom-images](https://github.com/AlexanderBabel/custom-images)
+
 # HomePod Connect Docker Image
 
 This is the offical Docker image of the Home Assistant add-on [HomePod Connect](https://community.home-assistant.io/t/homepod-connect-spotify-on-homepods-with-spotify-connect/482227). You can also use it by itself on other systems. It works out of the box with zeroconf and can be discovered inside your local network.
